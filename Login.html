@@ -13,7 +13,13 @@
     <body>
         <div id="Logincontainer">
             <form class="Loginform" action="/checklogin" method="post" accept-charset="utf-8">
-                
+                <fieldset>
+                    <legend>Login</legend>
+                    Gmail:<input type="text" name="gmail" value="" placeholder="" required><br>
+                    Password:<input typ="password" name="password" value="" placeholder="" required><br>
+                    <span id="errordisplay"></span><br>
+                    <input type="submit" value="Login">
+                </fieldset>
             </form>
         </div>
     </body>
