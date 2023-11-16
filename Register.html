@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <meta charset="UTF-8">
         <title>LoginRegis</title>
@@ -11,17 +11,17 @@
     </head>
 
     <body>
-        <div id="Logincontainer">
-            <form class="Loginform" action="/checklogin" method="post" accept-charset="utf-8">
+        <div id="container">
+            <form class="form" action="/regis" method="post" accept-charset="utf-8">
                 <fieldset>
-                    <legend>Login</legend>
+                    <legend>Register</legend>
+                    Name:<input type="text" name="name" value="" placeholder="" required><br>
+                    Surname:<input type="text" name="surname" value="" placeholder="" required><br>
                     Email:<input type="text" name="email" value="" placeholder="" required><br>
-                    Password:<input typ="password" name="password" value="" placeholder="" required><br>
-                    <span id="errordisplay"></span><br>
-                    <input type="submit" value="Login">
+                    Password:<input type="text" name="email" value="" placeholder="" required><br>
+                    Confirmpassword:<input type="text" name="confirmpassword" value="" placeholder="" required><br>
                 </fieldset>
             </form>
         </div>
     </body>
-
 </html>
