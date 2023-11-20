@@ -12,9 +12,9 @@
 			<nav>
 				<img class="logo" src="picture/logo_web.png" alt="logo">
 				<ul>
-				  <li><a id="allcoursebutton"href="#">คอร์สออนไลน์</a></li>
-				  <li><a id="loginbutton" href="#">เข้าสู่ระบบ</a></li>
-				  <li><a id="registerbutton" href="#">สมัครสมาชิก</a></li>
+				  <li><a id="allcoursebutton"href="index.html">คอร์สออนไลน์</a></li>
+				  <li><a id="loginbutton" href="login.html">เข้าสู่ระบบ</a></li>
+				  <li><a id="registerbutton" href="register.html">สมัครสมาชิก</a></li>
 				</ul>
 			</nav>
 			<h1>ลงทะเบียน</h1>
@@ -27,10 +27,14 @@
 				</div>
 				<div class="emailandpassword">
 				<div class="email">อีเมล/Email<input type="text" name="email" value="" placeholder="" required></div>
-				<div class="password">รหัสผ่าน/Password<input type="password" name="password" value="" placeholder=""></div>
+				<div class="password">รหัสผ่าน/Password<input type="password" name="password" value="" placeholder=""required></div>
 				</div>
-				<span id="errordisplay"></span>
-					<input type="submit" name="submit" value="Register">
+				<div class="submit" >
+					<input type="submit" name="submit" value="ลงทะเบียน">
+				</div>
+				<div class="registerquestion">
+					<h2>มีบัญชีอยู่แล้ว?</h2><h2><a href="login.html">เข้าสู่ระบบ</a></h2>
+				</div>
 			</form>
 		</div>
 	</body>
