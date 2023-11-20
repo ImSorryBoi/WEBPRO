@@ -1,0 +1,134 @@
+body {
+    background-color: #ffffff;
+	margin: 0;
+}
+
+.navcontainer{
+	font-family: 'Prompt', sans-serif;
+}
+
+.navcontainer>h1 {
+	text-align: center;
+    font-size: 250%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.logo{
+	margin-left: 15%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 180px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	background: #ffffff;
+	box-shadow: 0px 0px 12px rgb(155, 155, 155);
+	height: 100px;
+	width: 100%;
+}
+
+nav ul{
+	margin-right: 15%;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 52px;
+	margin: 5px 10px;
+	
+}
+
+nav ul li a{
+	color: white;
+	font-size: 20px;
+	padding: 9px 14px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+#allcoursebutton{
+	color: #000;
+	margin-right: 20px;
+	border-right: 4px solid #678EC4;
+	border-radius: 0;
+	padding-right: 50px;
+}
+
+#allcoursebutton:hover{
+	color: #144D7F;
+}
+
+#loginbutton{
+	color: #000;
+	background-color: #ffffff;
+	border: 1px solid #678EC4;
+}
+
+#loginbutton:hover{
+	color: #144D7F;
+}
+
+#registerbutton{
+	background-color: #678EC4;
+}
+
+#registerbutton:hover{
+	color: rgb(211, 211, 211);
+}
+
+a:hover{
+	color: rgb(211, 211, 211);
+	transition: .5s;
+}
+
+.registercontainer{
+	font-family: 'Prompt', sans-serif;
+	margin: auto;
+	width: 500px;
+	border: none;
+	border-radius: 8px;
+	background-color: #F7F7F7;
+	color: #144D7F;
+	font-size:18px;
+}
+
+#errordisplay{
+	/*margin-top: -20px;*/
+	font-size: 12px;
+	color: #EE0019;
+}
+
+.nameandsurname{
+	display: flex;
+	padding: 25px;
+
+}
+.name, .sername{
+	width: 200px;
+	padding: 10px;
+}
+
+.emailandpassword{
+	margin-top: -65px;
+	padding: 35px;
+}
+
+.email input, .password input{
+	width: 400px;
+	padding: 10px;
+}
+
+input{
+	background-color: #ffffff;
+	border: 1px solid #144D7F;
+	border-radius: 5px;
+	padding: 9px 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	
+}
+
