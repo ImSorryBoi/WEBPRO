@@ -5,21 +5,33 @@
 		<title>Register</title>
 		<link type="text/css" rel="stylesheet" href="css/style.css">
 		<script type="text/javascript" src="js/login.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div id=container>
+		<div class="navcontainer">
+			<nav>
+				<img class="logo" src="picture/logo_web.png" alt="logo">
+				<ul>
+				  <li><a id="allcoursebutton"href="#">คอร์สออนไลน์</a></li>
+				  <li><a id="loginbutton" href="#">เข้าสู่ระบบ</a></li>
+				  <li><a id="registerbutton" href="#">สมัครสมาชิก</a></li>
+				</ul>
+			</nav>
+			<h1>ลงทะเบียน</h1>
+        </div>
+		<div class=registercontainer>
 			<form class="form" action="/regisDB" method="post" accept-charset="utf-8">
-				<fieldset>
-					<legend> Register </legend>
-					Username:<input type="text" name="username" value="" placeholder="" required><br>
-					Email:<input type="text" name="email" value="" placeholder="" required><br>
-					Password: <input type="password" name="password" value="" placeholder=""><br>
-					<span id="errordisplay"></span><br>
+				<div class="nameandsurname">
+					<div class="name">ชื่อ/Name<input type="text" name="name" value="" placeholder="" required> </div>
+					<div class="sername">นามสกุล/Surname<input type="text" name="Surname" value="" placeholder="" required></div>
+				</div>
+				<div class="emailandpassword">
+				<div class="email">อีเมล/Email<input type="text" name="email" value="" placeholder="" required></div>
+				<div class="password">รหัสผ่าน/Password<input type="password" name="password" value="" placeholder=""></div>
+				</div>
+				<span id="errordisplay"></span>
 					<input type="submit" name="submit" value="Register">
-				</fieldset>
 			</form>
-			
 		</div>
-	
 	</body>
 </html>

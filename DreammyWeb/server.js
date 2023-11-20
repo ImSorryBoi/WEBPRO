@@ -124,18 +124,18 @@ app.get("/logout", (req, res) => {
 // });
 
 app.post("/checkLogin", async (req, res) => {
-    let sql = `SELECT username, img, password FROM userInfo`;
+    let sql = `SELECT email, img, password FROM userInfo`;
     let result = await queryDB(sql);
     result = Object.assign({},result);
      var keys = Object.keys(result);
     var IsCorrect = false;
     for (var numberOfKeys = 0; numberOfKeys < keys.length; numberOfKeys++) {
     if (
-      req.body.username == result[keys[numberOfKeys]].username &&
+      req.body.email == result[keys[numberOfKeys]].email &&
       req.body.password == result[keys[numberOfKeys]].password
     ) {
       console.log("login successful");
-      res.cookie("username", result[keys[numberOfKeys]].username);
+      res.cookie("email", result[keys[numberOfKeys]].email);
       res.cookie("img", result[keys[numberOfKeys]].img);
       IsCorrect = true;
       //นำทาง
