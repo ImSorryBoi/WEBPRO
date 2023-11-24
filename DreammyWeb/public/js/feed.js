@@ -1,7 +1,7 @@
 // check ว่ามีการ set cookies หรือยังถ้ามีจะไปยัง feed.html แต่ถ้าไม่มีจะกลับไปที่ login.html
 function checkCookie() {
-	var username = "";
-	if (getCookie("username") == false) {
+	var name = "";
+	if (getCookie("name") == false) {
 	  window.location = "login.html";
 	}
   }
@@ -28,9 +28,9 @@ function checkCookie() {
 	document.getElementById("displayPic").onclick = fileUpload;
 	document.getElementById("fileField").onchange = fileSubmit;
   
-	var username = getCookie("username");
+	var name = getCookie("name");
   
-	document.getElementById("username").innerHTML = username;
+	document.getElementById("name").innerHTML = name;
 	console.log(getCookie("img"));
 	showImg("img/" + getCookie("img"));
 	readPost();
@@ -78,7 +78,7 @@ function checkCookie() {
 		"Content-Type": "application/json",
 	  },
 	  body: JSON.stringify({
-		user: getCookie("username"),
+		user: getCookie("name"),
 		message: msg,
 	  }),
 	});
@@ -101,7 +101,7 @@ function checkCookie() {
 	  var temp1 = document.createElement("div");
 	  temp1.className = "postuser";
   
-	  temp1.innerHTML = "Posted by: " + data[keys[i]]["username"];
+	  temp1.innerHTML = "Posted by: " + data[keys[i]]["name"];
 	  temp.appendChild(temp1);
 	}
   }

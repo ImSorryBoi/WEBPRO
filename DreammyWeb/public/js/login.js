@@ -7,8 +7,10 @@ function pageLoad(){
 		if (window.location.href.split('/').pop()== "register.html"){
 			document.getElementById('errordisplay').innerHTML = "Registration Error!"
 		}else{
-			document.getElementById('errordisplay').innerHTML = "Username or password does not match.";
+			document.getElementById('errordisplay').innerHTML = "email or password does not match.";
 		}
-		
-	}	
+	}
+	if(urlParams.get("error")==2){
+		document.getElementById('errordisplay').innerHTML = "Email has already used";
+	}
 }
