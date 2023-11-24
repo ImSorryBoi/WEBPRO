@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+		<link type="text/css" rel="stylesheet" href="css/RegisAndLoginStyle.css">
+		<script type="text/javascript" src="js/login.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="navcontainer">
+			<nav>
+				<img class="logo" src="picture/logo_web.png" alt="logo">
+				<ul>
+				  <li><a id="allcoursebutton"href="index.html">คอร์สออนไลน์</a></li>
+				  <li><a id="loginbutton" href="login.html">เข้าสู่ระบบ</a></li>
+				  <li><a id="registerbutton" href="register.html">สมัครสมาชิก</a></li>
+				</ul>
+			</nav>
+			<h1>ลงทะเบียน</h1>
+        </div>
+		<div class=registercontainer>
+			<form class="form" action="/regisDB" method="post" accept-charset="utf-8">
+				<div class="nameandsurname">
+					<div class="name">ชื่อ/Name<input type="text" name="name" value="" placeholder="" required> </div>
+					<div class="sername">นามสกุล/Surname<input type="text" name="surname" value="" placeholder="" required></div>
+				</div>
+				<div class="emailandpassword">
+					<div class="email">อีเมล/Email<input id="regisEmail" type="text" name="email" value="" placeholder="" required></div>
+					<div class="password">รหัสผ่าน/Password<input type="password" name="password" value="" placeholder=""required></div>
+					<span id="errordisplay"></span>
+				</div>
+				<div class="submit" >
+					<input type="submit" name="submit" value="ลงทะเบียน">
+				</div>
+				<div class="registerquestion">
+					<h2>มีบัญชีอยู่แล้ว?</h2><h2><a href="login.html">เข้าสู่ระบบ</a></h2>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

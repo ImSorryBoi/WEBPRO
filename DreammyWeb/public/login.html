@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link type="text/css" rel="stylesheet" href="css/RegisAndLoginStyle.css">
+		<script type="text/javascript" src="js/login.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="navcontainer">
+			<nav>
+				<img class="logo" src="picture/logo_web.png" alt="logo">
+				<ul>
+				  <li><a id="allcoursebutton"href="index.html">คอร์สออนไลน์</a></li>
+				  <li><a id="loginbutton" href="login.html">เข้าสู่ระบบ</a></li>
+				  <li><a id="registerbutton" href="register.html">สมัครสมาชิก</a></li>
+				</ul>
+			</nav>
+			<h2>เข้าสู่ระบบ</h2>
+        </div>
+		<div class=logincontainer>
+			<form class="form" action="/checkLogin" method="post" accept-charset="utf-8">
+				<div class="emailandpassword">
+					<div class="email">อีเมล/Email<input type="text" name="email" value="" placeholder="" required></div>
+					<div class="password">รหัสผ่าน/Password<input type="password" name="password" value="" placeholder=""required></div>
+					<span id="errordisplay"></span>
+				</div>
+				<div class="submit">
+					<input type="submit" name="submit" value="เข้าสู่ระบบ">
+				</div>
+				<div class="loginquestion">
+					<h2>ยังไม่บัญชีกับเรา?</h2><h2><a href="register.html">คลิกเพื่อลงทะเบียน</a></h2>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

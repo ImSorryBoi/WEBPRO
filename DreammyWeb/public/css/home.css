@@ -1,0 +1,1013 @@
+body {
+    background-color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15% ;
+}
+
+.grid-container>div {
+    color: #292D78;
+    font-family: 'Kanit', sans-serif;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.grid-container2>div {
+    color: #2A2A82;
+    font-family: 'Kanit', sans-serif;
+    font-size: 100%;
+}
+
+#header {
+    text-align: center;
+    grid-column: 1 / span 1;
+    font-family: 'Kanit', sans-serif;
+    color: #C9B69A;
+    background-color:#11264F;
+    margin-top: -2%;
+    margin-left: -1%;
+
+}
+
+#header>h1 {
+    font-size: 400%;
+}
+
+#Mepicure {
+    grid-column: 2 / span 1;
+    margin-right: 10%;
+}
+
+#picure {
+    border-radius: 5%;
+    width: 80%;
+    object-fit: cover;
+}
+
+#introduction {
+    grid-column: 3 / span 1;
+    margin-bottom: 15%;
+}
+
+#introduction>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#introduction>h3 {
+    color: #42a4fa;
+    text-align: center;
+    font-size: 145%;
+    margin-top: -5%;
+}
+
+#introduction>h4 {
+    text-align: center ;
+    font-size: 180%;
+    margin-top: 10%;
+    
+}
+
+#skill {
+    text-align: center;
+    grid-column: 1 / span 3;
+    background: #f4f9ff;
+    margin-left: -1%;
+}
+
+#skill>h1 {
+    margin-top: 2%;
+    font-size: 280%;
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+
+.SkillIcon{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 17%;
+    grid-gap: 10%;
+    grid-column: 2 / span 3;
+}
+
+.SkillIcon img {
+    width: 80px; 
+    height: 80px; 
+    margin: 20px; 
+}
+
+.AssignmentMenu{
+    text-align: center;
+    background-color: #11264F;
+    margin-left: -1%;
+}
+
+.AssignmentMenu>h2 {
+    font-size: 200%;
+    font-family: 'Kanit', sans-serif;
+    color: #C9B69A; 
+}
+
+.Menu {
+    display: inline-flex;
+    padding: 25px;
+}
+.Menu>h2 {
+    font-size: 150%;
+    font-family: 'Kanit', sans-serif;
+}
+
+#aboutme {
+    margin-top: 5%;
+    grid-column: 2 / span 2;
+    margin-bottom: 8%;
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_container>div {
+    margin-left: 40px;
+}
+
+#footer {
+    background-color: #262932;
+    text-align: center;
+    grid-column: 1 / span 3;
+    
+    margin-left: -1%;
+}
+
+#footer>h2 {
+    color: #C9B69A;
+    font-size: 200%;
+    grid-column: 2 / span 1;
+}
+
+#footer>h3 {
+    color: #C9B69A;
+    font-size: 100%;
+    grid-column: 2 / span 1;
+}
+
+#footer>img {
+    width: 30px; 
+    height: 30px; 
+    margin: 20px;
+}
+
+.ContactIcon{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 43%;
+    grid-gap: 5%;
+    
+}
+
+.ContactIcon img {
+    width: 30px; 
+    height: 30px; 
+    margin: 10px; 
+}
+
+a:visited {
+    color: #6c7eb1;
+}
+
+a:hover {
+    color: #42a4fa;
+}
+
+a {
+    font-size: 100%;
+}
+
+
+
+
+#projectpicure {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+#projectpicure1 {
+    grid-column: 3 / span 1;
+    text-align: center;
+}
+
+#projectpicure2 {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+#picuregame {
+    border-radius: 5%;
+    width: 20%;
+    height: 90%;
+    object-fit: cover;
+    margin-bottom: -5%;
+}
+
+#picuregame1 {
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: -5%;
+    width: 50%;
+}
+
+#picuregame2 {
+    border-radius: 5%;
+    width: 20%;
+    height: 90%;
+    object-fit: cover;
+    margin-bottom: -5%;
+    margin: 5px; 
+}
+
+#projectintroduction {
+    grid-column: 2 / span 1;
+    margin-bottom: 15%;
+    margin-top: -3%;
+}
+
+#projectintroduction>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#projectintroduction>h3 {
+    color: #42a4fa;
+    text-align: center;
+    font-size: 145%;
+    margin-top: -3%;  
+}
+
+#projectintroduction>h4 {
+    text-align: center ;
+    font-size: 150%;
+}
+
+#projectStory {
+    grid-column: 2 / span 1;
+    margin-bottom: 15%;
+    margin-top: -3%;
+}
+
+#projectStory>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#projectStory>h3 {
+    color: #42a4fa;
+    text-align: center;
+    font-size: 145%;
+    margin-top: -3%;
+}
+
+#projectStory>h4 {
+    text-align: center ;
+    font-size: 150%;
+}
+
+#projectGameplay {
+    grid-column: 3 / span 1;
+    margin-bottom: 15%;
+}
+
+#projectGameplay>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#projectGameplay>h4 {
+    text-align: center ;
+    font-size: 150%;
+}
+
+#gameplaybackgroung {
+    background-color: #11264F;
+    text-align: center;
+    grid-column: 1 / span 3;
+    margin-top: 8%;
+    margin-left: -1%;
+}
+
+#gameplaybackgroung>h2 {
+    color: #C9B69A;
+    font-size: 200%;
+    grid-column: 2 / span 1;
+}
+
+#gameplaybackgroung>h3 {
+    color: #C9B69A;
+    font-size: 100%;
+    grid-column: 2 / span 1;
+}
+
+#projectvideo{
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+
+#projectvideo>h2{
+    text-align: center;
+    color: #C9B69A;
+    font-family: 'Kanit', sans-serif;
+    font-size: 300%;
+    
+}
+
+#projectvideo>h3{
+    text-align: center;
+    color: #C9B69A;
+    font-family: 'Kanit', sans-serif;
+    font-size: 150%;
+    
+}
+
+
+
+@media only screen and (max-width: 768px) {
+body {
+    background-color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%  ;
+}
+
+.grid-container>div {
+    color: #292D78;
+    font-family: 'Kanit', sans-serif;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.grid-container2>div {
+    color: #2A2A82;
+    font-family: 'Kanit', sans-serif;
+    font-size: 100%;
+}
+
+#header {
+    margin-top: -2%;
+    text-align: center;
+    grid-column: 1 / span 1;
+    font-family: 'Kanit', sans-serif;
+    color: #C9B69A;
+    background-color:#11264F;
+    margin-left: -1%;
+
+}
+
+#header>h1 {
+    font-size: 400%;
+}
+
+#Mepicure {
+    grid-column: 1 / span 2;
+    margin-right: 0%;
+    text-align: center;
+}
+
+#picure {
+    border-radius: 5%;
+    width: 50%;
+    object-fit: cover;
+}
+
+#introduction {
+    grid-column: 1 / span 2;
+    margin-bottom: 15%;
+    font-size: 80%;
+}
+
+#introduction>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#introduction>h3 {
+    color: #42a4fa;
+    text-align: center;
+    font-size: 145%;
+    margin-top: -5%;
+}
+
+#introduction>h4 {
+    text-align: center ;
+    font-size: 180%;
+    margin-top: 10%;
+    
+}
+
+#skill {
+    text-align: center;
+    grid-column: 1 / span 3;
+    background: #f4f9ff;
+    margin-left: -1%;
+}
+
+#skill>h1 {
+    margin-top: 2%;
+    font-size: 280%;
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+
+.SkillIcon{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 12%;
+    grid-gap: 10%;
+    grid-column: 2 / span 3;
+}
+
+.SkillIcon img {
+    width: 80px; 
+    height: 80px; 
+    margin: 20px; 
+}
+
+.AssignmentMenu{
+    text-align: center;
+    background-color: #11264F;
+    margin-left: -1%;
+}
+
+.AssignmentMenu>h2 {
+    font-size: 200%;
+    font-family: 'Kanit', sans-serif;
+    color: #C9B69A;
+    
+}
+
+.Menu {
+    display: inline-flex;
+    padding: 25px;
+}
+.Menu>h2 {
+    font-size: 150%;
+    font-family: 'Kanit', sans-serif;
+}
+
+#aboutme {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 8%;
+    grid-column: 1 / span 1;
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_container>div {
+    margin-left: 10px;  
+}
+
+#footer {
+    background-color: #262932;
+    text-align: center;
+    grid-column: 1 / span 3;
+    margin-left: -1%;
+}
+
+#footer>h2 {
+    color: #C9B69A;
+    font-size: 200%;
+    grid-column: 2 / span 1;
+}
+
+#footer>h3 {
+    color: #C9B69A;
+    font-size: 100%;
+    grid-column: 2 / span 1;
+}
+
+#footer>img {
+    width: 30px; 
+    height: 30px; 
+    margin: 20px;
+}
+
+.ContactIcon{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 35%;
+    grid-gap: 5%;
+    
+}
+
+.ContactIcon img {
+    width: 30px; 
+    height: 30px; 
+    margin: 10px; 
+}
+
+a:visited {
+    color: #6c7eb1;
+}
+
+a:hover {
+    color: #42a4fa;
+}
+
+a {
+    font-size: 100%;
+}
+
+#projectpicure {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+#projectpicure1 {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+#projectpicure2 {
+    grid-column: 1 / span 1;
+    text-align: center;
+}
+
+#picuregame {
+    border-radius: 5%;
+    width: 30%;
+    height: 90%;
+    object-fit: cover;
+    margin-bottom: -5%;
+}
+
+#picuregame1 {
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: -5%;
+    width: 60%;
+    height: 80%;
+}
+
+#picuregame2 {
+    border-radius: 5%;
+    width: 20%;
+    height: 90%;
+    object-fit: cover;
+    margin-bottom: -5%;
+    margin: 5px; 
+}
+
+#projectintroduction {
+    grid-column: 2 / span 1;
+    margin-bottom: 15%;
+    margin-top: -10%;
+}
+
+#projectintroduction>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#projectintroduction>h3 {
+    color: #42a4fa;
+    text-align: center;
+    font-size: 145%;
+    margin-top: -3%;  
+}
+
+#projectintroduction>h4 {
+    text-align: center ;
+    font-size: 120%;
+}
+
+#projectStory {
+    grid-column: 1 / span 1;
+    margin-bottom: 15%;
+    margin-top: -3%;
+}
+
+#projectStory>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#projectStory>h3 {
+    color: #42a4fa;
+    text-align: center;
+    font-size: 145%;
+    margin-top: -3%;
+}
+
+#projectStory>h4 {
+    text-align: center ;
+    font-size: 120%;
+}
+
+#projectGameplay {
+    grid-column: 2 / span 1;
+    margin-bottom: 15%;
+}
+
+#projectGameplay>h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+#projectGameplay>h4 {
+    text-align: center ;
+    font-size: 120%;
+}
+
+#gameplaybackgroung {
+    background-color: #11264F;
+    text-align: center;
+    grid-column: 1 / span 3;
+    margin-top: 8%;
+    margin-left: -1%;
+}
+
+#gameplaybackgroung>h2 {
+    color: #C9B69A;
+    font-size: 200%;
+    grid-column: 2 / span 1;
+}
+
+#gameplaybackgroung>h3 {
+    color: #C9B69A;
+    font-size: 100%;
+    grid-column: 2 / span 1;
+}
+
+#projectvideo{
+    text-align: center;
+    grid-column: 2 / span 1;
+}
+
+#projectvideo>h2{
+    text-align: center;
+    color: #C9B69A;
+    font-family: 'Kanit', sans-serif;
+    font-size: 300%;
+    
+}
+
+#projectvideo>h3{
+    text-align: center;
+    color: #C9B69A;
+    font-family: 'Kanit', sans-serif;
+    font-size: 150%;
+    
+}
+}
+@media only screen and (max-width: 560px) {
+    body {
+        background-color: #ffffff;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%  ;
+    }
+    
+    .grid-container>div {
+        color: #292D78;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 15% auto 15%;
+    }
+    
+    .grid-container2>div {
+        color: #2A2A82;
+        font-family: 'Kanit', sans-serif;
+        font-size: 100%;
+    }
+    
+    #header {
+        margin-top: -2%;
+        text-align: center;
+        grid-column: 1 / span 1;
+        font-family: 'Kanit', sans-serif;
+        color: #C9B69A;
+        background-color:#11264F;
+        margin-left: -1%;
+    
+    }
+    
+    #header>h1 {
+        font-size: 400%;
+    }
+    
+    #Mepicure {
+        grid-column: 1 / span 2;
+        margin-right: 0%;
+        text-align: center;
+    }
+    
+    #picure {
+        border-radius: 5%;
+        width: 70%;
+        object-fit: cover;
+    }
+    
+    #introduction {
+        grid-column: 1 / span 2;
+        margin-bottom: 15%;
+        font-size: 80%;
+    }
+    
+    #introduction>h2 {
+        text-align: center;
+        font-size: 300%;
+    }
+    
+    #introduction>h3 {
+        color: #42a4fa;
+        text-align: center;
+        font-size: 145%;
+        margin-top: -5%;
+    }
+    
+    #introduction>h4 {
+        text-align: center ;
+        font-size: 180%;
+        margin-top: 10%;
+        
+    }
+    
+    #skill {
+        text-align: center;
+        grid-column: 1 / span 3;
+        background: #f4f9ff;
+        margin-left: -1%;
+    }
+    
+    #skill>h1 {
+        margin-top: 2%;
+        font-size: 280%;
+        text-align: center;
+        grid-column: 2 / span 1;
+    }
+    
+    .SkillIcon{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 20%;
+        grid-gap: 10%;
+        grid-column: 2 / span 3;
+    }
+    
+    .SkillIcon img {
+        width: 80px; 
+        height: 80px; 
+        margin: 20px; 
+    }
+    
+    .AssignmentMenu{
+        text-align: center;
+        background-color: #11264F;
+        margin-left: -1%;
+    }
+    
+    .AssignmentMenu>h2 {
+        font-size: 200%;
+        font-family: 'Kanit', sans-serif;
+        color: #C9B69A;
+        
+    }
+    
+    .Menu {
+        display: inline-flex;
+        padding: 25px;
+    }
+    .Menu>h2 {
+        font-size: 150%;
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    #aboutme {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 8%;
+        grid-column: 1 / span 1;
+    }
+    
+    .flex_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    #footer {
+        background-color: #262932;
+        text-align: center;
+        grid-column: 1 / span 3;
+        margin-left: -1%;
+    }
+    
+    #footer>h2 {
+        color: #C9B69A;
+        font-size: 200%;
+        grid-column: 2 / span 1;
+    }
+    
+    #footer>h3 {
+        color: #C9B69A;
+        font-size: 100%;
+        grid-column: 2 / span 1;
+    }
+    
+    #footer>img {
+        width: 30px; 
+        height: 30px; 
+        margin: 20px;
+    }
+    
+    .ContactIcon{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 30%;
+        grid-gap: 5%;
+        
+    }
+    
+    .ContactIcon img {
+        width: 30px; 
+        height: 30px; 
+        margin: 10px; 
+    }
+    
+    a:visited {
+        color: #6c7eb1;
+    }
+    
+    a:hover {
+        color: #42a4fa;
+    }
+    
+    a {
+        font-size: 100%;
+    }
+    
+    #projectpicure {
+        grid-column: 2 / span 1;
+        text-align: center;
+    }
+    
+    #projectpicure1 {
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+    
+    #projectpicure2 {
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+    
+    #picuregame {
+        border-radius: 5%;
+        width: 30%;
+        height: 90%;
+        object-fit: cover;
+        margin-bottom: -5%;
+    }
+    
+    #picuregame1 {
+        border-radius: 5%;
+        object-fit: cover;
+        margin-bottom: -5%;
+        width: 60%;
+        height: 80%;
+    }
+    
+    #picuregame2 {
+        border-radius: 5%;
+        width: 20%;
+        height: 90%;
+        object-fit: cover;
+        margin-bottom: -5%;
+        margin: 5px; 
+    }
+    
+    #projectintroduction {
+        grid-column: 2 / span 1;
+        margin-bottom: 15%;
+        margin-top: -10%;
+    }
+    
+    #projectintroduction>h2 {
+        text-align: center;
+        font-size: 230%;
+    }
+    
+    #projectintroduction>h3 {
+        color: #42a4fa;
+        text-align: center;
+        font-size: 125%;
+        margin-top: -3%;  
+    }
+    
+    #projectintroduction>h4 {
+        text-align: center ;
+        font-size: 120%;
+    }
+    
+    #projectStory {
+        grid-column: 1 / span 2;
+        margin-bottom: 15%;
+        margin-top: -3%;
+    }
+    
+    #projectStory>h2 {
+        text-align: center;
+        font-size: 300%;
+    }
+    
+    #projectStory>h3 {
+        color: #42a4fa;
+        text-align: center;
+        font-size: 145%;
+        margin-top: -3%;
+    }
+    
+    #projectStory>h4 {
+        text-align: center ;
+        font-size: 120%;
+    }
+    
+    #projectGameplay {
+        grid-column: 1 / span 2;
+        margin-bottom: 15%;
+    }
+    
+    #projectGameplay>h2 {
+        text-align: center;
+        font-size: 300%;
+    }
+    
+    #projectGameplay>h4 {
+        text-align: center ;
+        font-size: 120%;
+    }
+    
+    #gameplaybackgroung {
+        background-color: #11264F;
+        text-align: center;
+        grid-column: 1 / span 3;
+        margin-top: 8%;
+        margin-left: -1%;
+    }
+    
+    #gameplaybackgroung>h2 {
+        color: #C9B69A;
+        font-size: 200%;
+        grid-column: 2 / span 1;
+    }
+    
+    #gameplaybackgroung>h3 {
+        color: #C9B69A;
+        font-size: 100%;
+        grid-column: 2 / span 1;
+    }
+    
+    #projectvideo{
+        text-align: center;
+        grid-column: 2 / span 1;
+    }
+    
+    #projectvideo>h2{
+        text-align: center;
+        color: #C9B69A;
+        font-family: 'Kanit', sans-serif;
+        font-size: 300%;
+    }
+    
+    #projectvideo>h3{
+        text-align: center;
+        color: #C9B69A;
+        font-family: 'Kanit', sans-serif;
+        font-size: 150%;
+
+    }
+}
