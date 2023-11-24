@@ -1,0 +1,325 @@
+body {
+    background-color: #ffffff;
+	margin: 0;
+}
+
+.navcontainer{
+	font-family: 'Prompt', sans-serif;
+}
+
+.navcontainer>h1 {
+	text-align: center;
+    font-size: 250%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.navcontainer>h2 {
+	text-align: center;
+    font-size: 250%;
+	margin-top: 40px;
+	margin-bottom: 105px;
+}
+
+.navcontainer>hr {
+	height:6px;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	border-width:0;
+	background-color: #C9B69A;
+}
+
+.logo{
+	margin-left: 15%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 180px;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	background: #ffffff;
+	box-shadow: 0px 0px 12px rgb(155, 155, 155);
+	height: 100px;
+	width: 100%;
+}
+
+nav ul{
+	margin-right: 15%;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 52px;
+	margin: 5px 10px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 20px;
+	padding: 9px 14px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+#allcoursebutton{
+	color: #000;
+	margin-right: 20px;
+	border-right: 4px solid #678EC4;
+	border-radius: 0;
+	padding-right: 50px;
+}
+
+#allcoursebutton:hover{
+	color: #144D7F;
+	transition: .3s;
+}
+
+#loginbutton{
+	color: #000;
+	background-color: #ffffff;
+	border: 1px solid #678EC4;
+}
+
+#loginbutton:hover{
+	color: #ffffff;
+	background-color: #678EC4;
+	transition: .3s;
+}
+
+#registerbutton{
+	background-color: #678EC4;
+}
+
+#registerbutton:hover{
+	color: #dddddd;
+	background-color: #5d84b9;
+	transition: .3s;
+}
+
+a:hover{
+	transition: .3s;
+}
+
+.grid-container2 {
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.grid-container2>div {
+    color: #2A2A82;
+    font-family: 'Prompt', sans-serif;
+    font-size: 100%;
+}
+
+.grid-container_promote_page {
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+	background-color: #D9D9D9;
+}
+
+.promote_page {
+	margin-top: 11%;
+	margin-bottom: 11%;
+	grid-column: 2 / span 1;
+}
+
+.promote_page>h1 {
+	font-family: 'Manjari', sans-serif;
+	font-size: 30pt;
+}
+
+.promote_page>h2 {
+	font-family: 'Manjari', sans-serif;
+	font-size: 30pt;
+	margin-top: -15px;
+	padding-left: 26px;
+}
+
+#Allcoursebutton{
+	color: white;
+	background-color: #678EC4;
+	font-size: 20px;
+	padding: 11px 16px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-left: 25px;
+}
+
+#Allcoursebutton:hover{
+	background-color: #5a81b8;
+}
+
+.grid-container_Course {
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+	background-color: #ffffff;
+	margin-top: 70px;
+	margin-bottom: 200px;
+}
+
+#Course_headline {
+	font-family: 'Manjari', sans-serif;
+	grid-column: 3 / span 1;
+	text-align: center;
+}
+
+#Course_headline>h1 {
+	color: #144D7F;
+	font-size: 30pt;
+}
+
+#Course_headline>h2 {
+	font-family: 'Prompt', sans-serif;
+	margin-top: -10px;
+	margin-bottom: 40px;
+	color: #000000;
+	font-size: 15pt;
+}
+
+#Course_HTML {
+	font-family: 'Manjari', sans-serif;
+	grid-column: 2 / span 1;
+	text-align: center;
+	color: #144D7F;
+	font-size: 14pt;
+}
+
+#Course_CSS {
+	font-family: 'Manjari', sans-serif;
+	grid-column: 3 / span 1;
+	text-align: center;
+	color: #144D7F;
+	font-size: 14pt;
+}
+
+#Course_java {
+	font-family: 'Manjari', sans-serif;
+	grid-column: 4 / span 1;
+	text-align: center;
+	color: #144D7F;
+	font-size: 14pt;
+}
+
+#Course_pic {
+	width: 370px; 
+    height: 208px; 
+	margin: auto;
+	border-radius: 10px;
+}
+
+#Course_pic:hover {
+	transform: scale(1.1);
+	transition: transform .2s;
+	box-shadow: 0px 0px 8px #C9B69A;
+}
+
+#footer {
+    background-color: #262932;
+    text-align: center;
+    grid-column: 1 / span 3;
+    margin-left: -1%;
+}
+
+#footer>h2 {
+    color: #C9B69A;
+    font-size: 200%;
+    grid-column: 2 / span 1;
+}
+
+#footer>h3 {
+    color: #C9B69A;
+    font-size: 100%;
+    grid-column: 2 / span 1;
+}
+
+.ContactIcon{
+    grid-column: 2 / span 3;
+    text-align: center;
+    grid-gap: 5%;
+    
+}
+
+.ContactIcon img {
+    width: 30px; 
+    height: 30px; 
+    margin: 30px; 
+}
+
+
+/* หน้า couse */
+.logo1{
+	margin-left: 5%;
+	margin-top: 5px;
+	width: 60px;
+}
+
+.grid-container_Courseinfo {
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+	background-color: rgb(148, 148, 148);
+}
+
+/* .Courseinfo {
+	background-color: #ffffff;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 20px;
+	grid-column: 3 / span 1;
+} */
+
+#Course_picinfo {
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 20px;
+	grid-column: 2 / span 2;
+}
+
+.grid-container_video {
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+	background-color: #535353;
+	padding: 3%;
+	padding-bottom: 150px;
+}
+
+#video {
+	grid-column: 2 /span 1;
+}
+
+#text {
+	grid-column: 2/span 1;
+	text-align: center;
+}
+
+#text>h1 {
+	font-family: 'Manjari', sans-serif;
+	color: #ffffff;
+	font-size: 35pt;
+	margin-bottom: 6%;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+}
+
+  /* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+  }

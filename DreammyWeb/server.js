@@ -63,10 +63,9 @@ const queryDB = (sql) => {
 
 app.post("/regisDB", async (req, res) => {
   let now_date = new Date().toISOString().slice(0, 19).replace("T", " ");
-  let sql =
-    "CREATE TABLE IF NOT EXISTS userInfo (id INT AUTO_INCREMENT PRIMARY KEY, reg_date TIMESTAMP, username VARCHAR(255), email VARCHAR(100),password VARCHAR(100),img VARCHAR(100))";
+  let sql = "CREATE TABLE IF NOT EXISTS userInfo (id INT AUTO_INCREMENT PRIMARY KEY, reg_date TIMESTAMP, name VARCHAR(255),surname VARCHAR(255), email VARCHAR(100),password VARCHAR(100))";
   let result = await queryDB(sql);
-  sql = `INSERT INTO userInfo (username, reg_date, email, password, img) VALUES ("${req.body.username}", "${now_date}","${req.body.email}", "${req.body.password}", "avatar.png")`;
+  sql = `INSERT INTO userInfo (name, surname, reg_date, email, password) VALUES ("${req.body.name}", "${req.body.surname}", "${now_date}","${req.body.email}", "${req.body.password}")`;
   result = await queryDB(sql);
   return res.redirect("login.html");
 });
@@ -99,7 +98,6 @@ app.post("/regisDB", async (req, res) => {
 
 app.get("/logout", (req, res) => {
   res.clearCookie("username");
-  res.clearCookie("img");
   return res.redirect("login.html");
 });
 
@@ -124,7 +122,7 @@ app.get("/logout", (req, res) => {
 // });
 
 app.post("/checkLogin", async (req, res) => {
-    let sql = `SELECT email, img, password FROM userInfo`;
+    let sql = `SELECT email, password FROM userInfo`;
     let result = await queryDB(sql);
     result = Object.assign({},result);
      var keys = Object.keys(result);
@@ -136,7 +134,6 @@ app.post("/checkLogin", async (req, res) => {
     ) {
       console.log("login successful");
       res.cookie("email", result[keys[numberOfKeys]].email);
-      res.cookie("img", result[keys[numberOfKeys]].img);
       IsCorrect = true;
       //นำทาง
       return res.redirect("index.html");
@@ -150,5 +147,5 @@ app.post("/checkLogin", async (req, res) => {
 });
 
 app.listen(port, hostname, () => {
-  console.log(`Server running at  http://${hostname}:${port}/register.html`);
+  console.log(`Server running at  http://${hostname}:${port}/index.html`);
 });
