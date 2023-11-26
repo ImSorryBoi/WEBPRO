@@ -14,3 +14,4 @@ function pageLoad(){
 		document.getElementById('errordisplay').innerHTML = "Email has already used";
 	}
 }
+
