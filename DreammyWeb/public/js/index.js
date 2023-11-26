@@ -13,7 +13,7 @@ window.onload = pageLoad;
   }
   
   async function pageLoad() {
-    var name = getCookie("email");
+    var name = getCookie("name");
     var nameElement = document.getElementById("name");
 	console.log(name);
         nameElement.innerText = name;
@@ -23,10 +23,6 @@ window.onload = pageLoad;
     document.getElementById("fileField").onchange = fileSubmit;
 }
 
-	document.addEventListener("DOMContentLoaded", function() {
-    pageLoad();
-});
-  
   function toggleElement() {
 	var loginAndRegisterButton = document.getElementById("RegisterAndLoginButton");
 	var logoutButton = document.getElementById("LogoutButton");

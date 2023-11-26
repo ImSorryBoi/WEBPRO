@@ -3,6 +3,14 @@ body {
 	margin: 0;
 }
 
+#name{
+	font-family: 'Prompt', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #678EC4;
+	padding: 9px 14px;
+	border-radius: 5px;
+}
 .navcontainer{
 	font-family: 'Prompt', sans-serif;
 }
@@ -265,13 +273,13 @@ a:hover{
 	background-color: rgb(148, 148, 148);
 }
 
-/* .Courseinfo {
+#Course_txtinfo {
 	background-color: #ffffff;
 	margin-top: 5%;
 	margin-bottom: 5%;
 	border-radius: 20px;
 	grid-column: 3 / span 1;
-} */
+} 
 
 #Course_picinfo {
 	width: 100%;
