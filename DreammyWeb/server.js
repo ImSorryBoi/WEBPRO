@@ -82,6 +82,50 @@ const checkEmailExisted = async (email) => {
   return result.length > 0;
 }
 
+app.post("/CSScoursedb", async (req, res) =>{
+  let sql = "CREATE TABLE IF NOT EXISTS CSSCoursedb (name VARCHAR(255), email VARCHAR(100), score INT(2))";
+  let result = await queryDB(sql);
+  const EmailExisted = await checkEmailExisted(req.body.email);
+
+  if(EmailExisted){
+   sql =  `UPDATE CSScoursedb set score = ${req.body.score} WHERE email = ${req.body.email}`;
+   result = await queryDB(sql);
+  }else{
+    sql = `INSERT INTO CSScoursedb (name, email, score) VALUES ("${req.body.name}", "${req.body.email}", "${req.body.score}")`;
+    result = await queryDB(sql);
+  }
+  return res.end;
+})
+
+app.post("/HTMLcoursedb", async (req, res) =>{
+  let sql = "CREATE TABLE IF NOT EXISTS HTMLCoursedb (name VARCHAR(255), email VARCHAR(100), score INT(2))";
+  let result = await queryDB(sql);
+  const EmailExisted = await checkEmailExisted(req.body.email);
+
+  if(EmailExisted){
+   sql =  `UPDATE HTMLcoursedb set score = ${req.body.score} WHERE email = ${req.body.email}`;
+   result = await queryDB(sql);
+  }else{
+    sql = `INSERT INTO HTMLcoursedb (name, email, score) VALUES ("${req.body.name}", "${req.body.email}", "${req.body.score}")`;
+    result = await queryDB(sql);
+  }
+  return res.end;
+})
+
+app.post("/JScoursedb", async (req, res) =>{
+  let sql = "CREATE TABLE IF NOT EXISTS JSCoursedb (name VARCHAR(255), email VARCHAR(100), score INT(2))";
+  let result = await queryDB(sql);
+  const EmailExisted = await checkEmailExisted(req.body.email);
+
+  if(EmailExisted){
+   sql =  `UPDATE JScoursedb set score = ${req.body.score} WHERE email = ${req.body.email}`;
+   result = await queryDB(sql);
+  }else{
+    sql = `INSERT INTO JScoursedb (name, email, score) VALUES ("${req.body.name}", "${req.body.email}", "${req.body.score}")`;
+    result = await queryDB(sql);
+  }
+  return res.end;
+})
 // app.post("/profilepic", async (req, res) => {
 //   let upload = multer({ storage: storage, fileFilter: imageFilter }).single(
 //     "avatar"
@@ -108,6 +152,11 @@ const checkEmailExisted = async (email) => {
 //   console.log(result);
 // };
 
+app.get("/logout", (req, res) => {
+  res.clearCookie("username");
+  return res.redirect("login.html");
+});
+
 // app.get("/readPost", async (req, res) => {
 //   let sql =
 //     "CREATE TABLE IF NOT EXISTS userPost (username VARCHAR(255), post VARCHAR(500))";
@@ -129,36 +178,30 @@ const checkEmailExisted = async (email) => {
 // });
 
 app.post("/checkLogin", async (req, res) => {
-  let sql = `SELECT email, password, name FROM userInfo`; // เพิ่มการดึงค่าชื่อผู้ใช้จากฐานข้อมูล
-  let result = await queryDB(sql);
-  result = Object.assign({}, result);
-  var keys = Object.keys(result);
-  var IsCorrect = false;
-
-  for (var numberOfKeys = 0; numberOfKeys < keys.length; numberOfKeys++) {
+    let sql = `SELECT email, password FROM userInfo`;
+    let result = await queryDB(sql);
+    result = Object.assign({},result);
+     var keys = Object.keys(result);
+    var IsCorrect = false;
+    for (var numberOfKeys = 0; numberOfKeys < keys.length; numberOfKeys++) {
     if (
       req.body.email == result[keys[numberOfKeys]].email &&
       req.body.password == result[keys[numberOfKeys]].password
     ) {
       console.log("login successful");
       res.cookie("email", result[keys[numberOfKeys]].email);
-      res.cookie("name", result[keys[numberOfKeys]].name); // ตั้งค่าคุกกี้ "name" ด้วยชื่อผู้ใช้
       IsCorrect = true;
+      //นำทาง
       return res.redirect("index.html");
     }
   }
-
   if (IsCorrect == false) {
+    IsCorrect = false;
     console.log("login failed");
     return res.redirect("login.html?error=1");
   }
 });
 
-app.get("/logout", (req, res) => {
-  res.clearCookie("email");
-  return res.redirect("Preindex.html");
-});
-
 app.listen(port, hostname, () => {
-  console.log(`Server running at  http://${hostname}:${port}/Preindex.html`);
+  console.log(`Server running at  http://${hostname}:${port}/index.html`);
 });
