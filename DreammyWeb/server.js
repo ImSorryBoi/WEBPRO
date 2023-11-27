@@ -127,36 +127,38 @@ app.post("/JScoursedb", async (req, res) =>{
   return res.end;
 })
 
-app.get("/logout", (req, res) => {
-  res.clearCookie("username");
-  return res.redirect("login.html");
-});
-
 app.post("/checkLogin", async (req, res) => {
-    let sql = `SELECT email, password FROM userInfo`;
-    let result = await queryDB(sql);
-    result = Object.assign({},result);
-     var keys = Object.keys(result);
-    var IsCorrect = false;
-    for (var numberOfKeys = 0; numberOfKeys < keys.length; numberOfKeys++) {
+  let sql = `SELECT email, password, name FROM userInfo`; // เพิ่มการดึงค่าชื่อผู้ใช้จากฐานข้อมูล
+  let result = await queryDB(sql);
+  result = Object.assign({}, result);
+  var keys = Object.keys(result);
+  var IsCorrect = false;
+
+  for (var numberOfKeys = 0; numberOfKeys < keys.length; numberOfKeys++) {
     if (
       req.body.email == result[keys[numberOfKeys]].email &&
       req.body.password == result[keys[numberOfKeys]].password
     ) {
       console.log("login successful");
       res.cookie("email", result[keys[numberOfKeys]].email);
+      res.cookie("name", result[keys[numberOfKeys]].name); // ตั้งค่าคุกกี้ "name" ด้วยชื่อผู้ใช้
       IsCorrect = true;
-      //นำทาง
       return res.redirect("index.html");
     }
   }
+
   if (IsCorrect == false) {
-    IsCorrect = false;
     console.log("login failed");
     return res.redirect("login.html?error=1");
   }
 });
 
+app.get("/logout", (req, res) => {
+  res.clearCookie("email");
+  res.clearCookie("name");
+  return res.redirect("login.html");
+});
+
 app.listen(port, hostname, () => {
-  console.log(`Server running at  http://${hostname}:${port}/index.html`);
+  console.log(`Server running at  http://${hostname}:${port}/Preindex.html`);
 });

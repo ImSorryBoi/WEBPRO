@@ -1,7 +1,7 @@
 window.onload = pageLoad;
 const htmlquizdata = [
     {
-        "question": "ใน HTML3 การลิงก์ไปยังหน้าเว็บอื่นทำได้โดยใช้แท็ก?",
+        "question": "ใน HTML การลิงก์ไปยังหน้าเว็บอื่นทำได้โดยใช้แท็ก?",
         "a":"<link>",
         "b":"<a>",
         "c":"<url>",
@@ -9,7 +9,7 @@ const htmlquizdata = [
         "correct":"a",
     },
     {
-        "question": "HTML3 แท็กที่ใช้สำหรับการสร้างตารางคือ?",
+        "question": "HTML แท็กที่ใช้สำหรับการสร้างตารางคือ?",
         "a":"<table>",
         "b":"<grid>",
         "c":"<tabular>",
@@ -107,9 +107,51 @@ function submit(){
             if(currentQuiz < htmlquizdata.length){
                 LoadQuiz();
             }else{
-                quiz.innerHTML = `<h2>Your answered ${score}/${htmlquizdata.length} questions correctly</h2>
-    
-                <button onclick="location.reload()">Reload</button>
+                quiz.innerHTML = `<br><style> .html-quiz-container{
+                    font-family: 'Prompt', sans-serif;
+                    display: grid;
+                    grid-template-columns: 20% auto 20%;
+                    background-color: #fafafa;
+                    padding-bottom: 5%;
+                }
+                
+                #htmlquiz{
+                    grid-column: 2 /span 1;
+                }
+                
+                .quiz-header{
+                    grid-column: 2 /span 1;
+                }
+                
+                .quiz-header>button{
+                    color: white;
+                    background-color: #678EC4;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-left: 5%;
+                }
+                
+                #htmlquestion{
+                    font-size: 20pt;
+                    padding: 3%;
+                    color: rgb(0, 0, 0);; 
+                }
+                
+                ol{
+                    color: rgb(0, 0, 0);
+                    font-size: 15pt;
+                    padding: 10px 14px;
+                    border-radius: 5px;
+                
+                }
+                </style>
+                <div class="html-quiz-container" id="htmlquiz">
+                <div class="quiz-header">
+                <div id="htmlquestion">คะเเนนที่คุณทำได้คือ ${score}/${htmlquizdata.length} คะเเนน</div>
+                <br>
+                <button onclick="location.reload()">เริ่มใหม่</button>
+                <button onclick="parent.location='html_Course.html'">ออก</button>
                 `;
                 updatescoredb();
             }
