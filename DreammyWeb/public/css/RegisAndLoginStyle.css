@@ -22,7 +22,7 @@ body {
 }
 
 .logo{
-	margin-left: 15%;
+	margin-left: 12%;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	width: 180px;
@@ -38,7 +38,7 @@ nav{
 }
 
 nav ul{
-	margin-right: 15%;
+	margin-right: 12%;
 }
 
 nav ul li{
@@ -65,6 +65,7 @@ nav ul li a{
 
 #allcoursebutton:hover{
 	color: #144D7F;
+	transition: .3s;
 }
 
 #loginbutton{
@@ -76,6 +77,7 @@ nav ul li a{
 #loginbutton:hover{
 	color: #ffffff;
 	background-color: #678EC4;
+	transition: .3s;
 }
 
 #registerbutton{
@@ -190,3 +192,61 @@ input{
 	color: #144D7F;
 }
 
+*{
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: #678EC4;
+	line-height: 100px;
+	margin-left: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 952px){
+	.checkbtn{
+	  display: block;
+	}
+
+	.logo{
+		margin-right: 3%;
+	}
+
+	ul{
+	  position: fixed;
+	  width: 50%;
+	  height: 80%;
+	  background: #f7f7f7;
+	  top: 84px;
+	  left: -100%;
+	  text-align: center;
+	  transition: all .5s;
+	}
+
+	nav ul li{
+	  display: block;
+	  margin: 50px 0;
+	  line-height: 20px;
+	}
+
+	nav ul li a{
+	  font-size: 20px;
+	}
+
+	a:hover,a.active{
+	  background: none;
+	  color: #0082e6;
+	}
+	
+	#check:checked ~ ul{
+	  left: 0;
+	}
+}
