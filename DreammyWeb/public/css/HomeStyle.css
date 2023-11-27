@@ -16,20 +16,6 @@ body {
 	background-color: white;
 }
 
-.navcontainer>h1 {
-	text-align: center;
-    font-size: 250%;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.navcontainer>h2 {
-	text-align: center;
-    font-size: 250%;
-	margin-top: 40px;
-	margin-bottom: 105px;
-}
-
 .navcontainer>hr {
 	height:6px;
 	margin-top: -1px;
@@ -39,7 +25,7 @@ body {
 }
 
 .logo{
-	margin-left: 15%;
+	margin-left: 12%;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	width: 180px;
@@ -55,7 +41,7 @@ nav{
 }
 
 nav ul{
-	margin-right: 15%;
+	margin-right: 12%;
 }
 
 nav ul li{
@@ -106,11 +92,6 @@ nav ul li a{
 	background-color: #5d84b9;
 	transition: .3s;
 }
-
-a:hover{
-	transition: .3s;
-}
-
 
 /* หน้า promo */
 .grid-container_promote_page {
@@ -451,10 +432,337 @@ ol{
 
 }
 
+*{
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
 
-  @media only screen and (max-width: 768px) {
-	body {
-		background-color: #070707;
-		margin: 0;
+.checkbtn{
+	font-size: 30px;
+	color: #678EC4;
+	line-height: 100px;
+	margin-left: 20px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+@media (max-width: 952px){
+	.checkbtn{
+	  display: block;
 	}
+
+	.logo{
+		margin-right: 3%;
+	}
+
+	ul{
+	  position: fixed;
+	  width: 50%;
+	  height: 80%;
+	  background: #f7f7f7;
+	  top: 84px;
+	  left: -100%;
+	  text-align: center;
+	  transition: all .5s;
+	}
+
+	nav ul li{
+	  display: block;
+	  margin: 50px 0;
+	  line-height: 20px;
+	}
+
+	nav ul li a{
+	  font-size: 20px;
+	}
+
+	a:hover,a.active{
+	  background: none;
+	  color: #0082e6;
+	}
+	
+	#check:checked ~ ul{
+	  left: 0;
+	}
+	
+	.promote_page>h1 {
+		font-family: 'Manjari', sans-serif;
+		font-size: 20pt;
+	}
+	
+	.promote_page>h2 {
+		font-family: 'Manjari', sans-serif;
+		font-size: 20pt;
+		margin-top: -15px;
+		padding-left: 26px;
+	}
+	
+	#Allcoursebutton{
+		color: white;
+		background-color: #678EC4;
+		font-size: 20px;
+		padding: 11px 16px;
+		border-radius: 5px;
+		text-decoration: none;
+		margin-left: 25px;
+	}
+	
+	#Allcoursebutton:hover{
+		background-color: #5a81b8;
+	}
+
+	.promote_page {
+		margin-top: 11%;
+		margin-bottom: 11%;
+		margin-bottom: 20%;
+		grid-column: 2 / span 1;
+	}
+	
+	.grid-container_Course {
+		font-family: 'Prompt', sans-serif;
+		display: grid;
+		grid-template-columns: 5% auto 5%;
+		background-color: #ffffff;
+		margin-top: 70px;
+		margin-bottom: 200px;
+	}
+	
+	#Course_headline {
+		font-family: 'Manjari', sans-serif;
+		grid-column: 2 / span 1;
+		text-align: center;
+	}
+	
+	#Course_headline>h1 {
+		color: #144D7F;
+		font-size: 25pt;
+	}
+	
+	#Course_headline>h2 {
+		font-family: 'Prompt', sans-serif;
+		margin-top: -10px;
+		margin-bottom: 40px;
+		color: #000000;
+		font-size: 15pt;
+	}
+	
+	#Course_HTML {
+		font-family: 'Manjari', sans-serif;
+		grid-column: 2 / span 1;
+		text-align: center;
+		color: #144D7F;
+		font-size: 14pt;
+	}
+	
+	#Course_CSS {
+		font-family: 'Manjari', sans-serif;
+		grid-column: 2 / span 1;
+		text-align: center;
+		color: #144D7F;
+		font-size: 14pt;
+	}
+	
+	#Course_java {
+		font-family: 'Manjari', sans-serif;
+		grid-column: 2 / span 1;
+		text-align: center;
+		color: #144D7F;
+		font-size: 14pt;
+	}
+	
+	#Course_pic {
+		width: 370px; 
+		height: 208px; 
+		margin: auto;
+		border-radius: 10px;
+	}
+	
+	#Course_pic:hover {
+		transform: scale(1.1);
+		transition: transform .2s;
+		box-shadow: 0px 0px 8px #C9B69A;
+	}
+	
+	.grid-container2 {
+		font-family: 'Prompt', sans-serif;
+		display: grid;
+		grid-template-columns: 15% auto 15%;
+	}
+	
+	/* หน้า couse */
+.logo1{
+	margin-left: 5%;
+	margin-top: 5px;
+	width: 60px;
+}
+
+.grid-container_Courseinfo {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+	background-color: rgb(247, 247, 247);
+}
+
+#Course_txtinfo {
+	background-color: #ffffff;
+	grid-column: 2 / span 1;
+	border-radius: 5%;
+	margin-top: 2%;
+	padding-bottom: 40px;
+	
+} 
+
+#Course_txtinfo>h1 {
+	font-family: 'Manjari', sans-serif;
+	margin-top: 10%;
+	padding-left: 7%;
+	font-size: 20pt;
+	color: #35558A;
+} 
+#Course_txtinfo>h2 {
+	font-family: 'Manjari', sans-serif;
+	margin-top: -15px;
+	padding-left: 7%;
+	font-size: 48pt;
+	color: #000000;
+} 
+#Course_txtinfo>h3 {
+	font-family: 'Prompt', sans-serif; 
+	margin-top: -55px;
+	padding-left: 7%;
+	font-size: 12pt;
+	color: #000000;
+} 
+#Course_txtinfo>h4 {
+	font-family: 'Prompt', sans-serif; 
+	margin-top: 10%;
+	padding-left: 7%;
+	font-size: 12pt;
+} 
+
+#Course_picinfo {
+	width: 100%;
+	border-radius: 0%;
+	margin-top: 0px;
+	grid-column: 1 / span 3;
+}
+
+#quizbutton{
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	background-color: #678EC4;
+	font-size: 20px;
+	padding: 11px 16px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-left: 7%;
+}
+
+#quizbutton:hover{
+	background-color: #5a81b8;
+}
+
+.grid-container_video {
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+	background-color: #535353;
+	padding: 3%;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+
+#video {
+	grid-column: 1 /span 3;
+}
+
+#text {
+	grid-column: 1/span 3;
+	text-align: center;
+}
+
+#text>h1 {
+	font-family: 'Manjari', sans-serif;
+	color: #ffffff;
+	font-size: 200%;
+	margin-bottom: 6%;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+}
+.responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
   }
+
+.html-quiz-container{
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+	background-color: #fafafa;
+	padding-bottom: 5%;
+}
+
+.css-quiz-container{
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+	background-color: #fafafa;
+	padding-bottom: 5%;
+}
+
+.js-quiz-container{
+	font-family: 'Prompt', sans-serif;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+	background-color: #fafafa;
+	padding-bottom: 5%;
+}
+
+.quiz-header>button{
+	color: white;
+	background-color: #678EC4;
+	padding: 8px 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 5%;
+}
+
+#htmlquestion{
+	font-size: 20pt;
+	padding: 3%;
+	color: rgb(0, 0, 0);; 
+}
+
+#cssquestion{
+	font-size: 20pt;
+	padding: 3%;
+	color: rgb(0, 0, 0);; 
+}
+
+#jsquestion{
+	font-size: 20pt;
+	padding: 3%;
+	color: rgb(0, 0, 0);; 
+}
+#jsquestion>ol{
+	color: rgb(0, 0, 0);
+	font-size: 15pt;
+	padding: 10px 14px;
+
+}
+}
