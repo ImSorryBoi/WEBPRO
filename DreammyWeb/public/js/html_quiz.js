@@ -115,7 +115,7 @@ function submit(){
                 html_quiz_container.style.display = "none";
                 htmlquizscore.style.display = "block";
                 var X = document.getElementById("htmlquizscore");
-                X.innerText = "คุณได้คะแนน"+ score +"จาก"+ htmlquizdata.length+"ข้อ";
+                X.innerText = " คุณได้คะแนน "+ score +" จาก "+ htmlquizdata.length+" ข้อ";
                 updatescoredb();
 
             }

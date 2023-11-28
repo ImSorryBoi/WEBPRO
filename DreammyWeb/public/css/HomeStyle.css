@@ -424,6 +424,24 @@ nav ul li a{
 	color: rgb(0, 0, 0);; 
 }
 
+#htmlquizscore{
+	font-size: 20pt;
+	padding: 3%;
+	color: rgb(0, 0, 0);; 
+}
+
+#cssquizscore{
+	font-size: 20pt;
+	padding: 3%;
+	color: rgb(0, 0, 0);; 
+}
+
+#jsquizscore{
+	font-size: 20pt;
+	padding: 3%;
+	color: rgb(0, 0, 0);; 
+}
+
 ol{
 	color: rgb(0, 0, 0);
 	font-size: 15pt;
