@@ -71,6 +71,9 @@ function LoadQuiz() {
     b_text.innerText = currentQuizData[currentQuiz].b;
     c_text.innerText = currentQuizData[currentQuiz].c;
     d_text.innerText = currentQuizData[currentQuiz].d;
+
+    var cssquizscore = document.getElementById("CSSResult");
+    cssquizscore.style.display = "none";
 }
 
 function deselectAnswers(){
@@ -92,6 +95,8 @@ function getselected(){
 
 function submit(){
 
+    var css_quiz_container = document.getElementById("cssquiz");
+    var cssquizscore = document.getElementById("CSSResult");
     const quiz = document.getElementById('cssquiz');
     const submitBtn = document.getElementById('submit');
 
@@ -107,15 +112,12 @@ function submit(){
             if(currentQuiz < cssquizdata.length){
                 LoadQuiz();
             }else{
-                quiz.innerHTML = `<br>
-                <div class="css-quiz-container" id="cssquiz">
-                <div class="quiz-header">
-                <div id="cssquestion">คะเเนนที่คุณทำได้คือ ${score}/${cssquizdata.length} คะเเนน</div>
-                <br>
-                <button onclick="location.reload()">เริ่มใหม่</button>
-                <button onclick="parent.location='css_Course.html'">ออก</button>
-                `;
+                css_quiz_container.style.display = "none";
+                cssquizscore.style.display = "block";
+                var X = document.getElementById("cssquizscore");
+                X.innerText = "คุณได้คะแนน"+ score +"จาก"+ cssquizdata.length+"ข้อ";
                 updatescoredb();
+
             }
         }
     })}
