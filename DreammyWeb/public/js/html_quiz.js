@@ -107,45 +107,7 @@ function submit(){
             if(currentQuiz < htmlquizdata.length){
                 LoadQuiz();
             }else{
-                quiz.innerHTML = `<br><style> .html-quiz-container{
-                    font-family: 'Prompt', sans-serif;
-                    display: grid;
-                    grid-template-columns: 20% auto 20%;
-                    background-color: #fafafa;
-                    padding-bottom: 5%;
-                }
-                
-                #htmlquiz{
-                    grid-column: 2 /span 1;
-                }
-                
-                .quiz-header{
-                    grid-column: 2 /span 1;
-                }
-                
-                .quiz-header>button{
-                    color: white;
-                    background-color: #678EC4;
-                    padding: 8px 16px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    margin-left: 5%;
-                }
-                
-                #htmlquestion{
-                    font-size: 20pt;
-                    padding: 3%;
-                    color: rgb(0, 0, 0);; 
-                }
-                
-                ol{
-                    color: rgb(0, 0, 0);
-                    font-size: 15pt;
-                    padding: 10px 14px;
-                    border-radius: 5px;
-                
-                }
-                </style>
+                quiz.innerHTML = `<br>
                 <div class="html-quiz-container" id="htmlquiz">
                 <div class="quiz-header">
                 <div id="htmlquestion">คะเเนนที่คุณทำได้คือ ${score}/${htmlquizdata.length} คะเเนน</div>
